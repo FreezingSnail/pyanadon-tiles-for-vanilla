@@ -1,0 +1,6 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 17.6.2026
+  Major Features:
+    - Initial release.
+    - adds vanilla recipes for pyanadon tiles 
