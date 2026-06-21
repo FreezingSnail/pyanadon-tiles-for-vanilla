@@ -20,10 +20,12 @@ data:extend({
 local enabled_concepts = {
   "tiles.py-aluminium",
   "tiles.py-iron",
-  "tiles.py-tints",
   "tiles.py-tile",
   "tiles.recipes",
   "tiles.base",
+  "tiles.py-tints",
+  "tiles.py-limestone-tints"
+
   --"tiles.space-age"
 }
 

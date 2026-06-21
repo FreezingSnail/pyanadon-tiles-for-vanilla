@@ -227,6 +227,7 @@ local recipe = table.deepcopy(BaseRecipe)
     recipe.name = name
     recipe.ingredients = ingredient_list
     recipe.results = {{type = "item", name = name, amount = 1}}
+    recipe.allow_recycling = false
 
     data:extend{brik, item, recipe }
 end

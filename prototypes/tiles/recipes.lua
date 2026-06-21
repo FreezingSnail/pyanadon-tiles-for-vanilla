@@ -4,7 +4,7 @@ if mods["space-age"] then
 elseif mods["pyalternativeenergy"] then
     Active_mod_mode = 3
 end
--- TODO need to add item / fluid tag
+
 Colors_additives = {
     ["red"] = {
         {{"fluid", "heavy-oil", 50}}, -- base
@@ -62,53 +62,5 @@ Colors_additives = {
        {{"item","uranium-ore", 2}}, -- base
        {{"item","uranium-ore", 2}}, -- spce
        {}, -- py
-    },
-    ["molybdenum"] = {
-       {{"fluid", "petroleum-gas",50}}, -- base
-       {{"item","holmium-plate", 2}}, -- spce
-       {   {type = "item", name = "molybdenum-plate", amount = 3},
-            {type = "fluid", name = "industrial-solvent", amount = 50}}, -- py
-    },
-    ["copper"] = {
-       {{"item","copper-plate", 2}}, -- base
-       {{"item","copper-plate", 2}}, -- spce
-       {{type = "item", name = "copper-plate", amount = 3},
-            {type = "fluid", name = "industrial-solvent", amount = 50}}, -- py
-    },
-    ["nickel"] = {
-       {{"item","uranium-238", 2}}, -- base
-       {{"item","uranium-238", 2}}, -- spce
-       {{type = "item", name = "nickel-plate", amount = 3},
-            {type = "fluid", name = "industrial-solvent", amount = 50}}, -- py
-    },
-    ["zinc"] = {
-       {{"item","uranium-ore", 2}}, -- base
-       {{"item","jelly", 2 }}, -- spce
-       {{type = "item", name = "zinc-plate", amount = 3},
-            {type = "fluid", name = "industrial-solvent", amount = 50}}, -- py
-    },
-    ["lead"] = {
-       {{"item","coal", 2 }}, -- base
-       {{"item","carbon", 2 }}, -- spce
-       {{type = "item", name = "lead-plate", amount = 3},
-            {type = "fluid", name = "industrial-solvent", amount = 50}}, -- py
-    },
-    ["niobium"] = {
-       {{"item","iron-plate", 2}}, -- base
-       {{"item","lithium-plate", 2}}, -- spce
-       {{type = "item", name = "niobium-plate", amount = 3},
-            {type = "fluid", name = "industrial-solvent", amount = 50}}, -- py
-    },
-    ["tin"] = {
-       {{"fluid", "petroleum-gas",50}}, -- base
-       {{"item","tungsten-plate", 2}}, -- spce
-       {{type = "item", name = "tin-plate", amount = 3},
-            {type = "fluid", name = "industrial-solvent", amount = 50}}, -- py
-    },
-    ["titanium"] = {
-       {{"fluid", "petroleum-gas",50}}, -- base
-       {{"item","holmium-plate", 2}}, -- spce
-       {{type = "item", name = "titanium-plate", amount = 3},
-            {type = "fluid", name = "industrial-solvent", amount = 50}}, -- py
     },
 }

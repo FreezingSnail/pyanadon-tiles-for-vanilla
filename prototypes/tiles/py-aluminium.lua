@@ -42,14 +42,14 @@ require("prototypes.tiles.recipes")
       local recipe = {
       type = "recipe",
       name = "py-aluminium",
-      category = "chemistry",
+      category = "crafting-with-fluid",
       enabled = true,
       energy_required = 1, -- time to craft in seconds (at crafting speed 1)
       ingredients = {
         {type = "item", name = "copper-plate", amount = 1},
         {type = "item", name = "steel-plate", amount = 1}
       },
-      results = {{type = "item", name = "py-aluminium", amount = 1}}
+      results = {{type = "item", name = "py-aluminium", amount = 1}},
     }
 if Active_mod_mode ~= 3 then
     data:extend{ pyAlTile, recipe, item }

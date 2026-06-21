@@ -12,20 +12,18 @@ BaseTile.transition_merges_with_tile_line = { "refined-concrete" }
 
 BaseItem = {
     type = "item",
-    name = "py-",
     icon = "__pyindustrygraphics__/graphics/icons/py-.png",
     subgroup = "py-tiles",
     order = "z[py-tile]",
     place_as_tile_result = {
-    tile = "py-",
     condition = { "ground-tile" }
     },
-    stack_size = 1000,
+    stack_size = 10000,
 }
 
 BaseRecipe = {
     type = "recipe",
-    category = "chemistry",
+    category = "crafting-with-fluid",
     enabled = true,
     energy_required = 1, -- time to craft in seconds (at crafting speed 1)
 }

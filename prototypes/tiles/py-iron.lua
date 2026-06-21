@@ -30,7 +30,8 @@ require("prototypes.tiles.recipes")
         tile = "py-iron",
         condition = { "ground-tile" }
         }
-    
+
+  
     local feRecipe = table.deepcopy(BaseRecipe)
         feRecipe.type = "recipe"
         feRecipe.name = "py-iron"
@@ -39,7 +40,6 @@ require("prototypes.tiles.recipes")
         {type = "item", name = "steel-plate", amount = 1}
         }
         feRecipe.results = {{type = "item", name = "py-iron", amount = 1}}
-
 if Active_mod_mode ~= 3 then
     data:extend{ pyFeTile, feItem, feRecipe }
 end
