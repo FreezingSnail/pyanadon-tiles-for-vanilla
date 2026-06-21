@@ -1,13 +1,15 @@
 {
-  "name": "pyanadon-tiles-for-vanilla",
+  "name": "py-tiles",
   "version": "1.0.0",
   "title": "pyanodon tiles for vanilla",
   "author": "freezingSnail",
   "dependencies": [
     "base",
-    "pyindustrygraphics >= 3.0.0"
+    "pyindustrygraphics >= 3.0.0",
+    "(?) pyalternativeenergy",
+    "(?) space-age"
   ],
   "homepage": "https://github.com/FreezingSnail/pyanadon-tiles-for-vanilla",
-  "description": "Vanilla port of pyanadon tiles",
+  "description": "Vanilla port of pyanadon tiles with or without space age",
   "factorio_version": "2.0"
 }
