@@ -1,4 +1,3 @@
-local bluestone = "FF6081A0"
 data:extend({
   {
     type = "item-subgroup",

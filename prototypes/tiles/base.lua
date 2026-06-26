@@ -89,7 +89,7 @@ local recipe = table.deepcopy(BaseRecipe)
 
     data:extend{item, recipe }
 
-for _, color_data in pairs(colors) do
+for i, color_data in pairs(colors) do
     local name = color_data.name .. "-tutorial-grid"
     local brik = table.deepcopy(data.raw["tile"]["tutorial-grid"])
     local recipe_items = Colors_additives[color_data.name][Active_mod_mode]
@@ -109,7 +109,7 @@ for _, color_data in pairs(colors) do
     brik.hidden = false
     brik.order = "a[color-tutorial-grid]"
     brik.subgroup = "py-tiles"
-    brik.layer =  data.raw["tile"]["tutorial-grid"].layer
+    brik.layer =  data.raw["tile"]["tutorial-grid"].layer + i
     brik.transition_merges_with_tile_line = { "concrete" }
     brik.minable = {mining_time = 0.1, result = name}
     brik.mined_sound = {filename = "__base__/sound/deconstruct-bricks.ogg"}
@@ -139,7 +139,7 @@ local recipe = table.deepcopy(BaseRecipe)
     data:extend{brik, item, recipe }
 end
 -- Concrete
-for _, color_data in pairs(colors) do
+for i, color_data in pairs(colors) do
     local name = color_data.name .. "-concrete"
     local crete = table.deepcopy(data.raw["tile"]["concrete"])
     local recipe_items = Colors_additives[color_data.name][Active_mod_mode]
@@ -158,7 +158,7 @@ for _, color_data in pairs(colors) do
     crete.hidden = false
     crete.order = "a[color-crete]"
     crete.subgroup = "py-tiles"
-    crete.layer =  data.raw["tile"]["concrete"].layer
+    crete.layer =  data.raw["tile"]["concrete"].layer + i
     crete.transition_merges_with_tile_line = { "concrete" }
     crete.minable = {mining_time = 0.1, result = name}
     crete.mined_sound = {filename = "__base__/sound/deconstruct-bricks.ogg"}
@@ -185,7 +185,7 @@ local recipe = table.deepcopy(BaseRecipe)
     data:extend{crete, item, recipe }
 end
 
-for _, color_data in pairs(colors) do
+for i, color_data in pairs(colors) do
     local name = color_data.name .. "-stone-path"
     local brik = table.deepcopy(data.raw["tile"]["stone-path"])
     local recipe_items = Colors_additives[color_data.name][Active_mod_mode]
@@ -204,7 +204,7 @@ for _, color_data in pairs(colors) do
     brik.hidden = false
     brik.order = "a[color-stone-path]"
     brik.subgroup = "py-tiles"
-    brik.layer =  data.raw["tile"]["stone-path"].layer
+    brik.layer =  data.raw["tile"]["stone-path"].layer + i
     brik.transition_merges_with_tile_line = { "stone-path" }
     brik.minable = {mining_time = 0.1, result = name}
     brik.mined_sound = {filename = "__base__/sound/deconstruct-bricks.ogg"}
