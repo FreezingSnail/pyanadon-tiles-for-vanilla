@@ -24,8 +24,6 @@ local enabled_concepts = {
   "tiles.base",
   "tiles.py-tints",
   "tiles.py-limestone-tints"
-
-  --"tiles.space-age"
 }
 
 for _, concept in ipairs(enabled_concepts) do
